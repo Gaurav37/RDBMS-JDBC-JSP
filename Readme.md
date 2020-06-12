@@ -8,7 +8,7 @@ In Eclipse, right click on the package name and select 'Run As' then select 'Run
 Following are some screenshots from the developed application. 
 First picture is main page.
 
-![](/Application page 1.png)
+![](RDBMS-JDBC-JSP/Application page 1.png)
 
 ## RDBMS Script
 First step was designing UML diagram after which database was designed using tables, views, triggers, procedures, event scheduler etc. Then various JDBC classes and JSP classes were made to make it work as an application.
