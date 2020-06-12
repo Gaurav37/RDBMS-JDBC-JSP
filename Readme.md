@@ -2,7 +2,13 @@
 
 This was a recent project to create an app which can be utilized by people moving to a new area for checking the best available medical centers or facilities in their area.
 
-Technologies used for this project are Java, MySQL, JDBC, JSP and tools used were excel, MySQL workbench, Eclipse, Clover(for extraction, transformation and loading of data from 2nd source)
+Technologies used for this project are Java, MySQL, JDBC, JSP and tools used were excel, MySQL workbench, Eclipse, Clover(for extraction, transformation and loading of data from 2nd source).
+
+In Eclipse, right click on the package name and select 'Run As' then select 'Run On Server' to run application though Apache Tomcat server using JSP files.
+Following are some screenshots from the developed application. 
+First picture is main page.
+
+![](/Application page 1)
 
 ## RDBMS Script
 First step was designing UML diagram after which database was designed using tables, views, triggers, procedures, event scheduler etc. Then various JDBC classes and JSP classes were made to make it work as an application.
