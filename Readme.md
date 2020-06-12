@@ -19,6 +19,32 @@ First step was designing UML diagram after which database was designed using tab
 
 Let us take a brief look at some part of the whole code which can help us understand the overall workflow of the application.
 
+### Create Table Statements
+The following code shows an example of create table statement with all constraints intended for good practice and structure.
+```
+Create table RehabilitationRating (
+	RatingKey int auto_increment,
+	CMSId VARCHAR(255),
+    StartDate TimeStamp,
+    EndDate TimeStamp,
+    UlcerRate float,
+    FluVaccRate float,
+    UTIRate float,
+    AssessGoalRate float,
+    FallRate float,
+    CDIRate float,
+    FluCoverStaff float,
+    ReadmissRate30Days float,
+    ReadmissRateDuringStay float,
+    ReturnHomeRate float,
+    MedicareSpendingPerBenificiary Float,
+    CONSTRAINT pk_RehabilitationRating_RatingKey primary key (RatingKey),
+    constraint fk_RehabilitationRating_CMSID foreign key (CMSId)
+		references Rehabilitation (CMSId)
+        ON UPDATE CASCADE ON DELETE set null
+);
+```
+
 ### Load Statements
 ```
 LOAD DATA INFILE 'Inpatient_Rehab_Ratings.csv'
